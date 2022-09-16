@@ -19,6 +19,6 @@ null_ls.setup {
     formatting.black.with { extra_args = { "--fast" } },
     formatting.stylua,
     formatting.isort,
-    diagnostics.flake8.with { extra_args = { "--config ~/.config/flake8" } },
+    diagnostics.flake8.with { args = { "--config", "/home/freddy/.config/flake8", "--stdin-display-name", "$FILENAME", "-" } },
   },
 }
