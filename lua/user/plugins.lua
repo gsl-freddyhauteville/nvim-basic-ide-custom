@@ -61,6 +61,12 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "3e79e043dfdc31b320d61432eae2eefc26478965" }
   use { "lunarvim/darkplus.nvim", commit = "aa1f0a582dc897259b9cb8bebad64110da4d4cc4" }
+  use {
+    "catppuccin/nvim",
+    as = "catppuccin",
+    run = ":CatppuccinCompile",
+    commit = "fb453cea1904ead67901aa65086ccf877603dfc1"
+  }
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "913eb8599816b0b71fe959693080917d8063b26a" } -- The completion plugin
